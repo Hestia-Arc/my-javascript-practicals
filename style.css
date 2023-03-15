@@ -39,5 +39,18 @@ h1 {
 }
 .box-content {
     padding: 10px 15px;
-    /* display: none; */
+    display: none;
+}
+
+/* Media Queries */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .container {
+        width: 92%;
+    }
+    .box {
+        width: 87%;
+    }
+    .box-tag {
+        font-size: 1.3rem;
+    }
 }

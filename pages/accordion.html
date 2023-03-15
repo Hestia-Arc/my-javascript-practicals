@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Parts of Speech</h1>
+        <div class="contents">
+            <div class="box">
+                <h2 class="box-tag">What is a Noun?</h2>
+                <div class="box-content">A Noun is a name of any person, animal, place or thing</div>
+            </div>
+
+            <div class="box">
+                <h2 class="box-tag">What is a Verb?</h2>
+                <div class="box-content">A Verb is an action word</div>
+            </div>
+
+            <div class="box">
+                <h2 class="box-tag">What is an Adjective?</h2>
+                <div class="box-content">An Adjective is a word used to qualify a Noun</div>
+            </div>
+
+            <div class="box">
+                <h2 class="box-tag">What is a Noun?</h2>
+                <div class="box-content">A Noun is a name of any person, animal, place or thing</div>
+            </div>
+
+
+            
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script>
+        // select the element to click on
+        let tag = document.getElementsByClassName('box-tag');
+         
+        // go through every elements in the array and attach an action
+        for ( let i = 0; i < tag.length; i++) {
+
+            // know when the element is clicked then invoke action 
+            tag[i].addEventListener('click', function() {
+
+                // select the next element to box-tag
+                let content = this.nextElementSibling;
+
+                // check if the element's style display is block or none
+                if (content.style.display === 'block') {
+                     content.style.display = 'none';
+                }else {
+                    content.style.display = 'block';
+                 }
+            });
+        }
+            
+    
+    </script>
+</body>
+</html>
